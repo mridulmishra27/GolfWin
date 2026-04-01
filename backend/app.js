@@ -15,6 +15,7 @@ const scoreRoutes = require("./routes/scoreRoutes");
 const subscriptionRoutes = require("./routes/subscriptionRoutes");
 const userRoutes = require("./routes/userRoutes");
 const winnerRoutes = require("./routes/winnerRoutes");
+const jobRoutes = require("./routes/jobRoutes");
 
 const app = express();
 
@@ -65,6 +66,7 @@ app.use("/api/scores", scoreRoutes);
 app.use("/api/subscriptions", subscriptionRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/winners", winnerRoutes);
+app.use("/api/jobs", jobRoutes);
 
 // Serve built frontend in production (fixes refresh on /admin, /dashboard, etc.)
 // This lets you run the app behind a single server without needing rewrite rules.

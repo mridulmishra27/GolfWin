@@ -39,8 +39,11 @@ async function ensureMonthlyDraftDraw({ type = "random" } = {}) {
 }
 
 function startMonthlyDrawJob() {
+  const isVercel = process.env.VERCEL === "1";
   const enabled = String(process.env.ENABLE_MONTHLY_JOB || "").toLowerCase() === "true";
-  if (!enabled) return;
+  
+  // Vercel handles cron jobs differently via webhooks, do not run node-cron
+  if (!enabled || isVercel) return;
 
   const jobType = (process.env.MONTHLY_JOB_DRAW_TYPE || "random").toLowerCase();
   const drawType = jobType === "algorithm" ? "algorithm" : "random";
