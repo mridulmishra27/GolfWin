@@ -1,0 +1,34 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...Γ₹ô 2725 modules transformed.
+Γ₹ù Build failed in 1.00s
+error during build:
+Build failed with 1 error:
+
+[UNRESOLVED_IMPORT] Error: Could not resolve '../../components/GlassCard' in src/pages/dashboard/Scores.jsx
+   Γò¡ΓöÇ[ src/pages/dashboard/Scores.jsx:6:23 ]
+   Γöé
+ 6 Γöé import GlassCard from "../../components/GlassCard";
+   Γöé                       ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                     Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Module not found.
+   Γöé 
+   Γöé Help: 'src/pages/dashboard/Scores.jsx' is imported by the following path:
+   Γöé         - src/pages/dashboard/Scores.jsx
+   Γöé         - src/App.jsx
+   Γöé         - src/main.jsx
+   Γöé         - index.html
+ΓöÇΓöÇΓöÇΓò»
+
+    at aggregateBindingErrorsIntoJsError (file:///D:/Assigment/frontend/node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:48:18)
+    at unwrapBindingResult (file:///D:/Assigment/frontend/node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:18:128)
+    at #build (file:///D:/Assigment/frontend/node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:3313:34)
+    at async buildEnvironment (file:///D:/Assigment/frontend/node_modules/vite/dist/node/chunks/node.js:32849:64)
+    at async Object.build (file:///D:/Assigment/frontend/node_modules/vite/dist/node/chunks/node.js:33271:19)
+    at async Object.buildApp (file:///D:/Assigment/frontend/node_modules/vite/dist/node/chunks/node.js:33268:153)
+    at async CAC.<anonymous> (file:///D:/Assigment/frontend/node_modules/vite/dist/node/cli.js:778:3) {
+  errors: [Getter/Setter]
+}
